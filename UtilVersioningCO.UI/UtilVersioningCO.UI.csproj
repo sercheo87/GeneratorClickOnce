@@ -104,6 +104,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="components\PostPublish.bat" />
+    <None Include="components\PrePublish.bat" />
+    <None Include="components\Publish.bat" />
+    <None Include="components\tools\7zip\7-zip.chm" />
     <None Include="ProjectsDs.xsc">
       <DependentUpon>ProjectsDs.xsd</DependentUpon>
     </None>
@@ -138,6 +142,10 @@
     <Folder Include="modules\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="components\GENERACION_CLICK_ONCE.vbs" />
+    <Content Include="components\tools\7zip\7za.exe" />
+    <Content Include="components\tools\7zip\license.txt" />
+    <Content Include="components\tools\7zip\readme.txt" />
     <Content Include="config\configuration.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <SubType>Designer</SubType>
