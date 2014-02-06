@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <coprojects>
+    <project id="COBISCorp.tCOBIS.BVI">COBISCorp.tCOBIS.BVI.Resources.Installer\COBISCorp.tCOBIS.BVI.Resources.Installer.csproj</project>
+    <project id="COBISCorp.tCOBIS.BVI.Clients">COBISCorp.tCOBIS.BVI.Client.Installer\COBISCorp.tCOBIS.BVI.Client.Installer.csproj</project>
+    <project id="COBISCorp.tCOBIS.BVI.GeneralInfo">COBISCorp.tCOBIS.BVI.GeneralInfo.Installer\COBISCorp.tCOBIS.BVI.GeneralInfo.Installer.csproj</project>
+    <project id="COBISCorp.tCOBIS.BVI.InternetBanking">COBISCorp.tCOBIS.BVI.InternetBanking.Installer\COBISCorp.tCOBIS.BVI.InternetBanking.Installer.csproj</project>
+    <project id="COBISCorp.tCOBIS.BVI.Kiosco">COBISCorp.tCOBIS.BVI.Kiosco.Installer\COBISCorp.tCOBIS.BVI.Kiosco.Installer.csproj</project>
+    <project id="COBISCorp.tCOBIS.BVI.Management">COBISCorp.tCOBIS.BVI.Management.Installer\COBISCorp.tCOBIS.BVI.Management.Installer.csproj</project>
+    <project id="COBISCorp.tCOBIS.BVI.MassivePayments">COBISCorp.tCOBIS.BVI.MassivePayments.Installer\COBISCorp.tCOBIS.BVI.MassivePayments.Installer.csproj</project>
+    <project id="COBISCorp.tCOBIS.BVI.Query">COBISCorp.tCOBIS.BVI.Query.Installer\COBISCorp.tCOBIS.BVI.Query.Installer.csproj</project>
+    <project id="COBISCorp.tCOBIS.BVI.SharedLibrary">COBISCorp.tCOBIS.BVI.SharedLibrary.Installer\COBISCorp.tCOBIS.BVI.SharedLibrary.Installer.csproj</project>
+    <project id="COBISCorp.tCOBIS.Utils.GroupEconomic">COBISCorp.tCOBIS.Utils.EconomicGroupSearch.Installer\COBISCorp.tCOBIS.Utils.EconomicGroupSearch.Installer.csproj</project>
+    <project id="COBISCorp.tCOBIS.Utils.KeyGenerator">COBISCorp.tCOBIS.Utils.KeyGenerator.Installer\COBISCorp.tCOBIS.Utils.KeyGenerator.Installer.csproj</project>
+    <project id="COBISCorp.tCOBIS.Utils.Official">COBISCorp.tCOBIS.Utils.Official.Installer\COBISCorp.tCOBIS.Utils.Official.Installer.csproj</project>
+    <project id="COBISCorp.tCOBIS.Utils.PrintLogin">COBISCorp.tCOBIS.Utils.PrintLogin.Installer\COBISCorp.tCOBIS.Utils.PrintLogin.Installer.csproj</project>
+    <project id="COBISCorp.tCOBIS.Utils.ProductSearch">COBISCorp.tCOBIS.Utils.ProductSearch.Installer\COBISCorp.tCOBIS.Utils.ProductSearch.Installer.csproj</project>
+  </coprojects>
+  <general>
+    <folder_projects>D:\TEST_CO_2\Solution</folder_projects>
+    <folder_installers>D:\TEST_CO_2\ClickOnce</folder_installers>
+    <folder_out>D:\TEST_CO_2</folder_out>
+    <folder_click_once>build</folder_click_once>
+    <folder_sql>Script</folder_sql>
+    <zip>True</zip>
+    <updateversiondll>False</updateversiondll>
+    <auto_increment_version>True</auto_increment_version>
+  </general>
+  <templates>
+    <sql>update cobis..an_module_group set mg_version='{0}' where mg_name='{1}'
+    go</sql>
+  </templates>
+</config>
