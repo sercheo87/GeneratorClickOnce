@@ -31,8 +31,8 @@ echo ***************************************************************************
 echo LIMPIEZA Y COMPILACION DE LOS PROYECTOS DEL ADMINISTRADOR
 echo *******************************************************************************
 echo %DEV_VS_EXECUTABLE%
-rem %DEV_VS_EXECUTABLE% %SOLUTION_ADMIN_VB% /rebuild 
-rem if errorlevel 1 goto BuildFailed
+%DEV_VS_EXECUTABLE% %SOLUTION_ADMIN_VB% /rebuild 
+if errorlevel 1 goto BuildFailed
 goto UPDATING_REFERENCES_PUBLISH
 
 
