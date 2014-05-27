@@ -15,6 +15,9 @@
     <project id="COBISCorp.tCOBIS.Utils.Official">COBISCorp.tCOBIS.Utils.Official.Installer\COBISCorp.tCOBIS.Utils.Official.Installer.csproj</project>
     <project id="COBISCorp.tCOBIS.Utils.PrintLogin">COBISCorp.tCOBIS.Utils.PrintLogin.Installer\COBISCorp.tCOBIS.Utils.PrintLogin.Installer.csproj</project>
     <project id="COBISCorp.tCOBIS.Utils.ProductSearch">COBISCorp.tCOBIS.Utils.ProductSearch.Installer\COBISCorp.tCOBIS.Utils.ProductSearch.Installer.csproj</project>
+    <project id="COBISCorp.eCOBIS.BVI.Location.Commons">COBISCorp.eCOBIS.BVI.Location.Admin.Resources.Installer\COBISCorp.eCOBIS.BVI.Location.Admin.Resources.Installer.csproj</project>
+    <project id="COBISCorp.eCOBIS.BVI.Location.Admin.UI">COBISCorp.eCOBIS.BVI.Location.Admin.UI.Installer\COBISCorp.eCOBIS.BVI.Location.Admin.UI.Installer.csproj</project>
+    <project id="COBISCorp.eCOBIS.BVI.Location.Admin.Presenter">COBISCorp.eCOBIS.BVI.Location.Admin.Presenter.Installer\COBISCorp.eCOBIS.BVI.Location.Admin.Presenter.Installer.csproj</project>
   </coprojects>
   <general>
     <folder_projects>D:\TEST_CO_2\Solution</folder_projects>

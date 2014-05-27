@@ -7,7 +7,6 @@ REM '***************************************************************************
 
 REM RUTA DEL PUBLICADO
 set SOLUTION_ADMIN_VB="..\Solution\COBISCorp.tCOBIS.BVI.sln"
-set SOLUTION_ADMIN_VB_UTIL="..\Solution\COBISCorp.tCOBIS.Utils\COBISCorp.tCOBIS.Utils.sln"
 
 REM *******************************************************************************
 REM SELECCION DEL COMPILADOR VS
@@ -16,34 +15,30 @@ if %PROCESSOR_ARCHITECTURE%==X86 goto x86_Verify
 if %PROCESSOR_ARCHITECTURE%==AMD64 goto x64_Verify
 
 :x86_Verify
-    SET DEV_VS_EXECUTABLE="%PROGRAMFILES%\Microsoft Visual Studio 10.0\Common7\IDE\devenv"
+    SET DEV_VS_EXECUTABLE="%PROGRAMFILES% (x86)\Microsoft Visual Studio 10.0\Common7\IDE\devenv"
 
 :x64_Verify
-    SET DEV_VS_EXECUTABLE="%PROGRAMFILES%\Microsoft Visual Studio 10.0\Common7\IDE\devenv"
+    SET DEV_VS_EXECUTABLE="%PROGRAMFILES% (x86)\Microsoft Visual Studio 10.0\Common7\IDE\devenv"
 REM *******************************************************************************
 
 echo *******************************************************************************
 echo LIMPIEZA Y COMPILACION DE LOS PROYECTOS UTILITARIOS DEL ADMINISTRADOR
 echo *******************************************************************************
 
-%DEV_VS_EXECUTABLE% %SOLUTION_ADMIN_VB_UTIL% /rebuild 
-if errorlevel 1 goto BuildFailed
-if errorlevel 0 goto COMPILADO_PROYECTO_ADMINISTRADOR
-
 :COMPILADO_PROYECTO_ADMINISTRADOR
 cls
 echo *******************************************************************************
 echo LIMPIEZA Y COMPILACION DE LOS PROYECTOS DEL ADMINISTRADOR
 echo *******************************************************************************
+echo %DEV_VS_EXECUTABLE%
 rem %DEV_VS_EXECUTABLE% %SOLUTION_ADMIN_VB% /rebuild 
 rem if errorlevel 1 goto BuildFailed
 goto UPDATING_REFERENCES_PUBLISH
 
 
 :UPDATING_REFERENCES_PUBLISH
-CD /D %source_path%
 echo *******************************************************************************
-REM ACTULIZACION DE DLL DE TODOS LOS PROYECTOS
+echo ACTULIZACION DE DLL DE TODOS LOS PROYECTOS
 echo *******************************************************************************
 echo COPIANDO CLICONCE Clients
 echo *******************************************************************************
@@ -136,6 +131,26 @@ echo COPIANDO CLICONCE COBISCorp.tCOBIS.Utils.ProductSearch.Installer
 echo *******************************************************************************
 set var_path="COBISCorp.tCOBIS.Utils.ProductSearch.Installer\BVI"
 xcopy "C:\COBIS\COBISExplorer\AdminBV\COBISCorp.tCOBIS.Utils.ProductSearch.dll" "%var_path%" /Y/A/I
+
+echo *******************************************************************************
+echo COPIANDO CLICONCE Resources Mobile Banking
+echo *******************************************************************************
+set var_path="COBISCorp.eCOBIS.BVI.Location.Admin.Resources.Installer\GEOLOCATION"
+xcopy "C:\COBIS\COBISExplorer\MobileBanking\COBISCorp.eCOBIS.BVI.Location.Commons.en.Resources.dll" "%var_path%" /Y/A/I
+xcopy "C:\COBIS\COBISExplorer\MobileBanking\COBISCorp.eCOBIS.BVI.Location.Commons.es.Resources.dll" "%var_path%" /Y/A/I
+
+echo *******************************************************************************
+echo COPIANDO CLICONCE Location.Admin.Presenter Mobile Banking
+echo *******************************************************************************
+set var_path="COBISCorp.eCOBIS.BVI.Location.Admin.Presenter.Installer\GEOLOCATION"
+xcopy "C:\COBIS\COBISExplorer\MobileBanking\COBISCorp.eCOBIS.BVI.Location.Admin.Presenter.dll" "%var_path%" /Y/A/I
+
+echo *******************************************************************************
+echo COPIANDO CLICONCE Location.Admin.UI Mobile Banking
+echo *******************************************************************************
+set var_path="COBISCorp.eCOBIS.BVI.Location.Admin.UI.Installer\GEOLOCATION"
+xcopy "C:\COBIS\COBISExplorer\MobileBanking\COBISCorp.eCOBIS.BVI.Location.Admin.UI.dll" "%var_path%" /Y/A/I
+
 
 echo *******************************************************************************
 echo CLEAR AND CREATE FOLDER BUILD

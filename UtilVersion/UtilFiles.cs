@@ -17,7 +17,7 @@ namespace UtilVersion
         public List<DtoFiles> GetProjectsByPath(String path)
         {
             List<DtoFiles> collectionProjects = new List<DtoFiles>();
-            string[] filePaths = Directory.GetFiles(path, "*.vbproj",SearchOption.AllDirectories);
+            string[] filePaths = Directory.GetFiles(path, "*.*proj",SearchOption.AllDirectories);
 
             foreach (string file in filePaths)
             {
