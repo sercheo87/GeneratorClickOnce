@@ -10,7 +10,7 @@
     <project id="COBISCorp.tCOBIS.BVI.MassivePayments">COBISCorp.tCOBIS.BVI.MassivePayments.Installer\COBISCorp.tCOBIS.BVI.MassivePayments.Installer.csproj</project>
     <project id="COBISCorp.tCOBIS.BVI.Query">COBISCorp.tCOBIS.BVI.Query.Installer\COBISCorp.tCOBIS.BVI.Query.Installer.csproj</project>
     <project id="COBISCorp.tCOBIS.BVI.SharedLibrary">COBISCorp.tCOBIS.BVI.SharedLibrary.Installer\COBISCorp.tCOBIS.BVI.SharedLibrary.Installer.csproj</project>
-    <project id="COBISCorp.tCOBIS.Utils.GroupEconomic">COBISCorp.tCOBIS.Utils.EconomicGroupSearch.Installer\COBISCorp.tCOBIS.Utils.EconomicGroupSearch.Installer.csproj</project>
+    <project id="COBISCorp.tCOBIS.Utils.EconomicGroupSearch">COBISCorp.tCOBIS.Utils.EconomicGroupSearch.Installer\COBISCorp.tCOBIS.Utils.EconomicGroupSearch.Installer.csproj</project>
     <project id="COBISCorp.tCOBIS.Utils.KeyGenerator">COBISCorp.tCOBIS.Utils.KeyGenerator.Installer\COBISCorp.tCOBIS.Utils.KeyGenerator.Installer.csproj</project>
     <project id="COBISCorp.tCOBIS.Utils.Official">COBISCorp.tCOBIS.Utils.Official.Installer\COBISCorp.tCOBIS.Utils.Official.Installer.csproj</project>
     <project id="COBISCorp.tCOBIS.Utils.PrintLogin">COBISCorp.tCOBIS.Utils.PrintLogin.Installer\COBISCorp.tCOBIS.Utils.PrintLogin.Installer.csproj</project>
