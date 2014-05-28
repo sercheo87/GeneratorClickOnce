@@ -135,9 +135,12 @@ xcopy "C:\COBIS\COBISExplorer\AdminBV\COBISCorp.tCOBIS.Utils.ProductSearch.dll" 
 echo *******************************************************************************
 echo COPIANDO CLICONCE Resources Mobile Banking
 echo *******************************************************************************
-set var_path="COBISCorp.eCOBIS.BVI.Location.Admin.Resources.Installer\GEOLOCATION"
+set var_path="COBISCorp.eCOBIS.BVI.Location.Commons.Installer\GEOLOCATION"
+xcopy "C:\COBIS\COBISExplorer\MobileBanking\COBISCorp.eCOBIS.BVI.Location.Commons.dll" "%var_path%" /Y/A/I
 xcopy "C:\COBIS\COBISExplorer\MobileBanking\COBISCorp.eCOBIS.BVI.Location.Commons.en.Resources.dll" "%var_path%" /Y/A/I
 xcopy "C:\COBIS\COBISExplorer\MobileBanking\COBISCorp.eCOBIS.BVI.Location.Commons.es.Resources.dll" "%var_path%" /Y/A/I
+xcopy "C:\COBIS\COBISExplorer\MobileBanking\COBISCorp.eCOBIS.MobileBanking.Admin.Geolocation.BLI.dll" "%var_path%" /Y/A/I
+xcopy "C:\COBIS\COBISExplorer\MobileBanking\COBISCorp.eCOBIS.MobileBanking.Admin.Geolocation.DTO.dll" "%var_path%" /Y/A/I
 
 echo *******************************************************************************
 echo COPIANDO CLICONCE Location.Admin.Presenter Mobile Banking
